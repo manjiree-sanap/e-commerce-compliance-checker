@@ -1,19 +1,20 @@
-import { dummyScans } from '@/lib/dummy-data';
-import { notFound } from 'next/navigation';
-import ReportView from '../../../components/reports/report-view';
+import { ProductsList } from '@/components/product-ids';
 
-export default function ReportPage({ params }: { params: { reportId: string } }) {
-  const report = dummyScans.find((scan) => scan.id === params.reportId);
-
-  if (!report) {
-    notFound();
-  }
-
-  return <ReportView report={report} />;
-}
-
-export function generateStaticParams() {
-  return dummyScans.map((scan) => ({
-    reportId: scan.id,
-  }));
+export default function Home() {
+  return (
+    <main className="container mx-auto py-8 px-4">
+      <div className="space-y-6">
+        <div className="text-center space-y-2">
+          <h1 className="text-3xl font-bold tracking-tight">
+            Product Compliance Dashboard
+          </h1>
+          <p className="text-muted-foreground">
+            Comprehensive view of product compliance data from DynamoDB
+          </p>
+        </div>
+        
+        <ProductsList />
+      </div>
+    </main>
+  );
 }
