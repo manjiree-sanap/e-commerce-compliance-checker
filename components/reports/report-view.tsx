@@ -31,7 +31,7 @@ const generateChartData = (report: ScanReport, chartType: string) => {
 
   if (chartType === 'pie') {
     return [
-      { name: 'Compliant', value: complianceStats.compliant, color: '#10b981' },
+      { name: 'Compliant', value: complianceStats.compliant, color: '#00FF00' },
       { name: 'With Warnings', value: complianceStats.warning, color: '#f59e0b' },
       { name: 'Non-Compliant', value: complianceStats.nonCompliant, color: '#ef4444' },
     ];

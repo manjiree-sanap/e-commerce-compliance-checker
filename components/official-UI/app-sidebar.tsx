@@ -5,23 +5,12 @@ import {
   IconCamera,
   IconChartBar,
   IconDashboard,
-  IconDatabase,
   IconFileAi,
   IconFileDescription,
-  IconFileWord,
-  IconFolder,
-  IconHelp,
-  IconInnerShadowTop,
-  IconListDetails,
-  IconReport,
-  IconSearch,
-  IconSettings,
-  IconUsers,
 } from "@tabler/icons-react"
+import Image from "next/image"
 
-import { NavDocuments } from "@/components/official-UI/nav-documents"
 import { NavMain } from "@/components/official-UI/nav-main"
-import { NavSecondary } from "@/components/official-UI/nav-secondary"
 import { NavUser } from "@/components/official-UI/nav-user"
 import {
   Sidebar,
@@ -112,8 +101,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <a href="#">
-                <IconInnerShadowTop className="!size-5" />
-                <span className="text-base font-semibold">Compliance Checker</span>
+                <Image src="/logo.png" alt="Logo" width={36} height={36} />
+                <span className="text-base font-semibold">Compliance <span className="text-yellow-400">Checker</span></span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
