@@ -30,4 +30,4 @@ This is the **frontend** for the Automated Compliance Checker — a **web-based 
 | **Library**   | React |
 | **Styling**   | Tailwind CSS |
 
-## Backend Link: https://github.com/Kanishk2Kumar/e-commerce-compliance-checker-backend
+## Backend Link: https://github.com/manjiree-sanap/e-commerce-compliance-checker-backend.git
